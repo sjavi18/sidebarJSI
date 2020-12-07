@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+    background-color: #E5E5E5 !important;
+}
+
+.ng-sidebar {
+    background-color: #FFF;
+    width: 256px;
+}
+
+input[type="search"] {
+    font-family: FontAwesome;
+}

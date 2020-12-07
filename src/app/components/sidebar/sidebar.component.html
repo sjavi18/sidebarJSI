@@ -1,0 +1,76 @@
+<ng-sidebar-container>
+
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="opened" mode="push">
+        <img src="https://hardwaredoctor.com.ec/wp-content/uploads/2018/02/logo-hd.png" style="width: 100%;">
+        <div class="text-justify mt-2 ml-5">
+
+            <button type="button" class="btn btn-primary"> + Crear Solicitud</button>
+        </div>
+
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="fa fa-cubes"></span>
+                    Resumen
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="fa fa-files-o"></span>
+                    Solicitudes
+                    <ul>
+                        <li>Solicitudes de crédito</li>
+                        <li>Solicitudes preaprobadas</li>
+                    </ul>
+                </a>
+            </li>
+
+        </ul>
+
+
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <button class="btn btn-primary btn-sm" (click)="toggleSidebar()"><span
+                            class="fa fa-bars"></span></button>
+                </div>
+                <div class="col-sm-2 text-right font-weight-bold">
+                    <label>Javier Simbana <span class="font-weight-light">wsimbana@pichincha.com</span></label>
+
+                </div>
+                <div class="col-sm-1 text-right">
+                    <i class="fa fa-bell"></i>
+                </div>
+
+            </div>
+            <div class="row pb-3">
+
+                <div class="col-md-12">
+                    <input type="search" class="form-control search py-2 rounded-pill mr-1 pr-5"
+                        placeholder="&#xf002;  Buscar...">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="height: 530px;">
+                        <div style="height: 250px;"></div>
+                        <div class="card-body card-block text-center h4 text-uppercase">
+                            Sistema de gestión<br>
+                            de líneas de crédito
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</ng-sidebar-container>
